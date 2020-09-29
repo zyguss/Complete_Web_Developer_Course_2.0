@@ -1,0 +1,21 @@
+ body {
+                
+	 font-family: sans-serif;
+
+}
+
+#shape {
+
+	 width: 200px;
+	 height: 200px;
+	 background-color: red;
+	 display: none; /* da bi makeShapeAppear imao efekta 104. red */
+	 position: relative;
+
+}
+
+.bold {
+
+	 font-weight: bold;
+
+}

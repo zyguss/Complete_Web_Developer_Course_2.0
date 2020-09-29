@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+        
+        <title>jQuery</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ 
+<!--        <script type="text/javascript" src="jquery.min.js"></script>-->
+        
+        
+        <style type="text/css">
+        
+            #circle {
+                
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                
+            }
+            
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <div id="circle"></div>
+        
+        
+        <script type="text/javascript">
+            
+            $("#circle").click(function() {
+                
+                $(this).animate({ // uglaste zagrade su za niz u jQuery
+                    width:"400px",
+                    height:"400px",
+                    marginLeft:"100px", // ime koje je u css sa cricom izmedju, u jQuery nije
+                    marginTop:"100px"
+                }, 2000, function() { //callback function, izvrsava se na kraju
+                    
+                    $(this).css("background-color", "red"); // ali neka i jesu izgleda
+                    													// mozda to vazi samo kad se poziva .css               
+            });
+            
+            
+        
+        </script>
+        
+    </body>
+   
+
+</html>
